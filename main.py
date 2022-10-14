@@ -43,7 +43,6 @@ def main():
     setup()
 
     parser, args = process_command()
-    args.cmd = 'g'
 
     if args.cmd == 'run':
         workflow.run()
