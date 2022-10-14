@@ -1,0 +1,12 @@
+can-j1939==2.0.11
+matplotlib
+pandas
+profilehooks
+opencv-python
+memory_profiler
+scipy
+scikit-image
+scikit-learn
+flake8
+autopep8
+isort

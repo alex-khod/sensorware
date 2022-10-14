@@ -1,0 +1,14 @@
+[Unit]
+Description=Sensor main daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 -u /home/.../services/test.py
+WorkingDirectory=/home/.../services/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=...
+
+[Install]
+WantedBy=multi-user.target

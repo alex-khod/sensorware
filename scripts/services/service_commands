@@ -1,0 +1,7 @@
+systemctl status service-name
+systemctl start service-name
+systemctl restart service-name
+systemctl stop service-name
+
+journalctl -u service-name #check log
+journalctl --vacuum-time=2d #clear

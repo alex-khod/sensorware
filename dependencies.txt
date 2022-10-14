@@ -1,0 +1,18 @@
+git clone https://github.com/alex-khod/PiCameraApp.git thirdparty\PiCameraApp
+
+# opencv (fix atomic_fetch_add_8)
+#pip3 install opencv-contrib-python==3.4.3.18
+# add repository to /etc/apt/sources.list
+# https://www.raspbian.org/RaspbianMirrors
+deb http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian/ buster main contrib non-free rpi
+
+sudo apt-get update
+
+#cmake
+sudo apt install cmake build-essential pkg-config git
+# libs
+sudo apt install libjpeg-dev libtiff-dev libjasper-dev libpng-dev libwebp-dev libopenexr-dev
+sudo apt install libqtgui4 libqt4-test
+sudo apt install libhdf5-dev libhdf5-103
+# install libatlas and liblapack
+sudo apt-get install libatlas-base-dev liblapacke-dev gfortran
